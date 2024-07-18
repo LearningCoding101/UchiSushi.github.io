@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+<script>
+  
+</script>
+
+<title>Uchisushi</title>
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" > 
+	
+<style>
+    
+	.navigation {
+                width: 100%;
+                height: 30px;
+                display: flex;
+                padding: 50px;
+                box-sizing: border-box;
+                font-family: "Roboto Condensed", sans-serif;
+            }
+    
+            .navigation .navbar li {
+                list-style: none;
+                margin: 20px;
+            }
+            .navigation .navbar li:nth-child(5) {
+                color:#A31F36;
+            }
+            .navbar{
+                font-weight: 600;
+                justify-content:space-evenly;
+            }
+            .footer{
+                background-color:#EFEFEF;
+                padding: 50px;
+                font-size: small;
+            }
+            .footericon{
+                display: flex;
+                flex-direction: column;
+                padding-top: 40px;
+                gap:10px;
+                align-items: center;
+
+            }
+            .iconnho{
+                display: flex;
+                align-items: center;
+                gap:25px;
+            }
+            .locat h1 {
+		        font-family: Jomhuria;
+		        font-size: 128px;
+                padding-left: 20px;
+                line-height: 60px;
+                margin: 40px 0;
+            }
+            .col-md-6 {
+		margin-bottom: 30px;
+	}
+    
+    .img-fluid {
+			width: 100%;
+		}
+	.card2 {
+		border: thin;
+        padding-right: 10px;
+	}
+    .info {
+			text-align: justify;
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+		.info p {
+			margin-bottom: 0;
+			font-size: 16px;
+			font-family: "Roboto Condensed", sans-serif;
+		}
+		.info h5 {
+			font-weight: 700;
+			font-size: 24px;
+			margin-bottom: 20px;
+			font-family: "Roboto Condensed", sans-serif;
+		}
+		.button {
+			margin: 0;
+			padding: 20px 0;
+
+		}
+        
+        button:hover {background-color: #A31F36}
+        button:active {
+            background-color: #691221}
+		button {
+			background-color: #343F56;
+            cursor: pointer;
+			color: #FFFFFF;
+			font-style: italic;
+			border: none;
+			border-radius: 8px;
+			width: 100%;
+			height: 40px;
+            
+		}
+		.share {
+			text-align: justify;
+			gap: 20px;
+		}
+		.share p {
+			margin-bottom: 0;
+		}
+		.icons {
+			display: flex;
+			flex-direction: row;
+			gap:10px;
+			align-items: center;
+		}
+	
+		.list p {
+			text-align: justify;
+		}
+		.list p i {
+			padding-right: 10px;
+		}
+		.feature {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap:10px;
+			
+		}
+		.feature ul {
+			padding-left: 0;
+			text-align: justify;
+			list-style: none;
+			margin-bottom: 0;
+		}
+		ul li {
+			margin-bottom: 20px;
+		}
+		ul li i {
+			padding-right: 10px;
+		}
+		hr {
+			margin: 20px 0;
+		}
+		ul li:nth-child(2) {
+			margin-bottom: 0;
+		}
+        .paragraph {
+            height: 32px; 
+            margin-bottom: 20px;
+        }
+    .hidemapbar {
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+</style>
+</head>
+
+<body>
+	<div
+            class="navigation col-lg-12 d-flex justify-content-evenly align-items-center">
+            <ul class="navbar col-lg-12 d-flex">
+                <li class="list d-none d-md-block">About us</li>
+                <li class="list d-none d-md-block">Menu</li>
+                <li class="list d-none d-md-block">Services</li>
+                <img id="anh" src="uchi images/uchisushilogo.png" alt="logo">
+                <li class="list d-none d-md-block">Address</li>
+                <li class="list d-none d-md-block">Contact</li>
+                <li class="list d-none d-md-block"><i
+                        class="fa fa-shopping-cart"></i></li>
+                <li class="list d-block d-md-none"
+                    style="padding-left: 200px;"><i
+                        class="fa fa-bars"></i></li>
+
+            </ul>
+            
+        </div>
+
+	<div class="locat text-center">
+        <h1 class="col-md-12 mx-2">LOCATION</h1>
+    </div>
+
+  
+  <div class="hidemapbar" style="width:100%; height:430pxpx; border: none; display:inline-block; overflow:hidden;">
+    <iframe style="position:relative; top:-60px; border:none;" 
+          src="https://www.google.com/maps/d/u/0/embed?mid=1JWba5YiSJ09WUtUkU2hZF_h-uKXZXVI&ehbc=2E312F&noprof=1" 
+          width="100%" height="550px"></iframe>
+    </div>
+
+    <div class="container mt-0 mb-3">
+        <div class="row">
+            <div class="card2 col-md-6 col-lg-4">
+                <div class="card d-flex flex-column justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-row align-items-center p-4">
+
+                            <div class="moi">
+                                <img class="img-fluid" src="image locat3.png">
+
+            <div class="info">
+            <h5>Le Lai, District 1</h5>
+            <div class="paragraph">
+			<p>
+				No.106 Le Lai St, Pham Ngu Lao Ward, District 1, Ho Chi Minh City.</p>
+            </div>
+            </div>
+            
+            <div class="button">
+				<button onclick="location.href='https://maps.app.goo.gl/ugQgpsZ62nELc3M49'" type="button">Maps</button>
+			</div>
+			<div class="share d-flex">
+				<div>
+				<p>Share:</p>
+				</div>
+				<div class="icons">
+					<i class="fa-brands fa-facebook-f"></i>
+					<i class="fa-solid fa-link"></i> 
+					<i class="fa-solid fa-message"></i>
+				</div>
+			</div>
+			<hr width="100%" size="2">
+			
+			<div class="list">
+				<p><i class="fa-regular fa-clock"></i>10AM - 11PM</p>
+				<div class="feature">
+					<ul>
+						<li><i class="fa-solid fa-car-side"></i>Car parking available</li>
+						<li><i class="fa-solid fa-bag-shopping"></i>Take away</li>
+					</ul>
+					<ul>
+						<li><i class="fa-solid fa-face-smile"></i>Family friendly</li>
+						<li><i class="fa-solid fa-store"></i>On-site service</li>
+						
+					</ul>
+
+				</div>
+				
+			</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="card2 col-md-6 col-lg-4">
+                <div class="card d-flex flex-column justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-row align-items-center p-4">
+                            
+                            <div class="moi">
+                                <img class="img-fluid" src="image locat3.png">
+
+            <div class="info">
+            <h5>Ward 6, District 4.</h5>
+            <div class="paragraph">
+                <p>
+                    No.14 St.45 Ward 6, District 4, Ho Chi Minh City.</p>
+                </div>
+            </div>
+            
+            <div class="button">
+				<button onclick="location.href='https://maps.app.goo.gl/aF1Ak9VGBorAX37R7'" type="button">Maps</button>
+			</div>
+			<div class="share d-flex">
+				<div>
+				<p>Share:</p>
+				</div>
+				<div class="icons">
+					<i class="fa-brands fa-facebook-f"></i>
+					<i class="fa-solid fa-link"></i> 
+					<i class="fa-solid fa-message"></i>
+				</div>
+			</div>
+			<hr width="100%" size="2">
+			
+			<div class="list">
+				<p><i class="fa-regular fa-clock"></i>10AM - 11PM</p>
+				<div class="feature">
+					<ul>
+						<li><i class="fa-solid fa-car-side"></i>Car parking available</li>
+						<li><i class="fa-solid fa-bag-shopping"></i>Take away</li>
+					</ul>
+					<ul>
+						<li><i class="fa-solid fa-face-smile"></i>Family friendly</li>
+						<li><i class="fa-solid fa-store"></i>On-site service</li>
+						
+					</ul>
+
+				</div>
+				
+			</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card2 col-md-6 col-lg-4">
+                <div class="card d-flex flex-column justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-row align-items-center p-4">
+                            
+                            <div class="moi">
+                                <img class="img-fluid" src="image locat3.png">
+
+            <div class="info">
+            <h5>Hoang Huu Nam, District 9</h5>
+            <div class="paragraph">
+			<p>
+				No.327 Hoang Huu Nam St, Long Thanh My Ward, District 9, Ho Chi Minh City.</p>
+            </div>
+        </div>
+            
+            <div class="button">
+				
+                <button onclick="location.href='https://maps.app.goo.gl/ugQgpsZ62nELc3M49'" type="button">Maps</button>
+			</div>
+			<div class="share d-flex">
+				<div>
+				<p>Share:</p>
+				</div>
+				<div class="icons">
+					<i class="fa-brands fa-facebook-f"></i>
+					<i class="fa-solid fa-link"></i> 
+					<i class="fa-solid fa-message"></i>
+				</div>
+			</div>
+			<hr width="100%" size="2">
+			
+			<div class="list">
+				<p><i class="fa-regular fa-clock"></i>10AM - 11PM</p>
+				<div class="feature">
+					<ul>
+						<li><i class="fa-solid fa-car-side"></i>Car parking available</li>
+						<li><i class="fa-solid fa-bag-shopping"></i>Take away</li>
+					</ul>
+					<ul>
+						<li><i class="fa-solid fa-face-smile"></i>Family friendly</li>
+						<li><i class="fa-solid fa-store"></i>On-site service</li>
+						
+					</ul>
+
+				</div>
+				
+			</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer -->
+<div class="footer d-flex  lg-offset-2 col-lg-12">
+    <section class="footericon container col-lg-2">
+        <img
+            src="uchi images/GD1819-LOGO GUIDELINE-NGUYEN ANH CU-logo chính-18 1.png"
+            width="180px">
+        <div class="iconnho">
+            <img src="uchi images/Vector.png">
+            <img src="uchi images/instagram.png">
+            <img src="uchi images/whatsapp.png">
+            <img src="uchi images/tiktok.png">
+        </div>
+    </section>
+    <section class="infofoot container col-lg-2  offset-lg-2">
+        <h5>Information</h5>
+        <p>About us</p>
+        <p>Menu</p>
+        <p>Offer</p>
+        <p>News</p>
+    </section>
+    <section class="otherinfo container col-lg-6">
+        <div>
+            <h5>Contact</h5>
+            <p>Tel: 0283 9409 593 / 070 4800 286 / 076 3233 286</p>
+            <p>Email: uchisushi.vn@gmail.com</p>
+        </div>
+        <div>
+            <h5>Location</h5>
+            <p>Branch 1: No. 14 St. 45, Ward 6, District 4, Ho Chi Minh
+                City.</p>
+            <p>Branch 2: No. 327 Hoang Huu Nam, Tan Phu Ward Tan Phu,
+                District 9, Thu Duc City.</p>
+            <p>Branch 3: 106 Le Lai, Ben Thanh Ward, District 1, Ho Chi Minh
+                City.</p>
+        </div>
+    </section>
+</div>
+<!-- end footer -->
+
+</body>
+</html>
