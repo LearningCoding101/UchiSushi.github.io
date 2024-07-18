@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <script>
+
+    </script>
+
+    <title>Uchisushi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .navigation {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            padding: 50px;
+            box-sizing: border-box;
+            font-family: Roboto;
+        }
+
+        .navigation .navbar li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        .navbar {
+            font-weight: 600;
+            justify-content: space-evenly;
+        }
+
+        .list a:link {
+            text-decoration: none;
+
+        }
+
+        .list a:hover {
+            color: #A31F36;
+        }
+
+        .list a {
+            color: #343F56;
+        }
+        @keyframes wiggle {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            80% {
+                transform: rotate(0deg);
+            }
+
+            85% {
+                transform: rotate(5deg);
+            }
+
+            95% {
+                transform: rotate(-5deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        .list:hover {
+            
+            font-size: larger !important;
+            transition: 0.5s;
+            animation: wiggle 1s infinite;
+
+        }
+
+        .footer {
+            background-color: #343F56;
+            color:white;
+            padding: 50px;
+            font-family: Roboto;
+        }
+        
+
+        .footericon {
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+            gap: 10px;
+            align-items: center;
+            
+
+        }
+        .info>p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .otherinfo {
+            font-size: 16px;
+
+        }
+
+        .iconnho {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+
+
+        .section2 h1 {
+            font-family: Jomhuria;
+            font-size: 128px;
+            margin: 0;
+            line-height: 60px;
+
+        }
+
+        .section2 p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+
+        input[type=text] {
+            text-align: justify;
+            font-weight: 500;
+            height: 48px;
+            background-color: none;
+            border-radius: 10px;
+            border-style: thin;
+            border-color: #B0B0B0;
+            color: #B0B0B0;
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 0;
+        }
+
+
+        .section2 h6 {
+            font-weight: 700;
+            font-size: 20px;
+            margin: 25px 0 16px 0;
+        }
+
+        button {
+            background-color: #A31F36;
+            border-style: none;
+            color: white;
+            width: 152px;
+            height: 48px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #343F56
+        }
+
+        button:active {
+            background-color: #5a6c93
+        }
+
+        button {
+            background-color: #A31F36;
+            cursor: pointer;
+            color: #FFFFFF;
+
+            border: none;
+            border-radius: 8px;
+            width: 152;
+            height: 48px;
+
+        }
+
+        ::placeholder {
+            line-height: 35px;
+            justify-content: center;
+
+            text-align: justify;
+            font-size: 15px;
+
+        }
+
+        .col-md-12 {
+            margin-bottom: 10px;
+        }
+
+
+        .custom-checkbox {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+
+        }
+
+        .dining {
+            color: #555551;
+            font-size: 16px;
+            font-weight: 500;
+
+        }
+
+        .custom-checkbox+.dining {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .custom-checkbox+.dining::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid #c3c3c3;
+            border-radius: 0.25em;
+            margin-right: 0.5em;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+
+        .custom-checkbox:checked+.dining::before {
+            border-color: #A31F36;
+            background-color: #A31F36;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+     <!-- navbar-->
+     <div class="navigation col-lg-12 d-flex justify-content-evenly align-items-center">
+        <ul class="navbar col-lg-12 d-flex">
+            <li class="list d-none d-md-block"><a href="About us.html">About us</a></li>
+            <li class="list d-none d-md-block"><a href="Menu main.html">Menu</a></li>
+            <li class="list d-none d-md-block"><a href="Uchisushi reservation.html">Services</a></li>
+            <a href="index.html"> <img id="anh" src="HOMEPAGE IMAGE/Frame 145.png" alt="logo"> </a>
+            <li class="list d-none d-md-block"><a href="Uchisushi address.html">Address</a></li>
+            <li class="list d-none d-md-block"><a href="Uchisushi reservation.html">Contact</a></li>
+            <li class="list d-none d-md-block"><a href="shoppingcart.html"><i class="fa fa-shopping-cart"></i></a></li>
+            <li class="list d-block d-md-none" style="padding-left: 200px;"><i class="fa fa-bars"></i></li>
+
+        </ul>
+    </div>
+    <!-- end navbar-->
+    <div class="image">
+        <img class="img-fluid" src="contact_image/Frame 150.png" alt="#" width="100%" height="622px">
+    </div>
+
+
+
+    <div class="section2 ">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-8 m-5">
+                <form action="">
+                    <div class="contact">
+                        <h1>CONTACT</h1>
+                        <p>Please complete all information below.</p>
+                    </div>
+                    <div class="col-md-12 mx-2">
+
+                        <label for="full-name" class="form-label">Full name</label>
+
+                        <input type="text" class="form-control" placeholder="Your full name here (*)" id="full-name"
+                            required />
+                    </div>
+
+                    <div class="col-md-12 mx-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" placeholder="Your email here (*)"
+                            id="addresscustomer" />
+                    </div>
+                    <div class="col-md-12 mx-2">
+                        <label for="phone-number" class="form-label">Phone number</label>
+                        <input type="text" class="form-control" placeholder="Your phone number here (*)" id="phone"
+                            required />
+                    </div>
+                    <div class="col-md-12 mx-2">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" placeholder="Title (*)" id="phone" required />
+                    </div>
+                    <div class="col-md-12 mx-2">
+                        <label for="phone-number" class="form-label">Content</label>
+                        <input type="text" class="form-control" placeholder="Content (*)" id="phone" required />
+                    </div>
+
+
+                    <div class="col-md-12 mx-2 text-center">
+                        <button>Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- footer -->
+     <div class="footer d-flex  lg-offset-2 col-lg-12">
+        <section class="footericon container col-lg-2">
+            <img src="HOMEPAGE IMAGE/GD1819-LOGO GUIDELINE-NGUYEN ANH CU-18 1.png" width="180px">
+            <div class="iconnho">
+                <img src="HOMEPAGE IMAGE/instagram.png">
+                <img src="HOMEPAGE IMAGE/Vector (2).png">
+                <img src="HOMEPAGE IMAGE/Vector (1).png">
+                <img src="HOMEPAGE IMAGE/Vector.png">
+            </div>
+        </section>
+        <section class="info container col-lg-2  offset-lg-2">
+            <h5>Information</h5>
+            <p>About us</p>
+            <p>Menu</p>
+            <p>Offer</p>
+            <p>News</p>
+        </section>
+        <section class="inforight container col-lg-6">
+            <div>
+                <h5>Contact</h5>
+                <p class="otherinfo">Tel: 0283 9409 593 / 070 4800 286 / 076 3233 286</p>
+                <p class="otherinfo">Email: uchisushi.vn@gmail.com</p>
+            </div>
+            <div>
+                <h5>Location</h5>
+                <p class="otherinfo">Branch 1: No. 14 St. 45, Ward 6, District 4, Ho Chi Minh
+                    City.</p>
+                <p class="otherinfo">Branch 2: No. 327 Hoang Huu Nam, Tan Phu Ward Tan Phu,
+                    District 9, Thu Duc City.</p>
+                <p class="otherinfo">Branch 3: 106 Le Lai, Ben Thanh Ward, District 1, Ho Chi Minh
+                    City.</p>
+            </div>
+        </section>
+    </div>
+    <img src="ABOUT US/abstract_japanese_wave_pattern_design_1006 1.png" style="width:100vw">
+    <!-- end footer -->
+</body>
+
+</html>
